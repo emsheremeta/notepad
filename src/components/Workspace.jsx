@@ -12,7 +12,6 @@ function Main({ activeNote, onSave, edit }) {
   }, [activeNote]);
 
   const handleInputChange = event => {
-    console.log(event);
     switch (event.target.id) {
       case 'title':
         setTitle(event.target.value);

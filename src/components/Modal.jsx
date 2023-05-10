@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 export default function Modal({ onClose, onDelete }) {
-  console.log('modal');
   const handleBackdrop = event => {
     if (event.currentTarget === event.target) {
       onClose();

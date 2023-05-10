@@ -14,22 +14,18 @@ function Sidebar({
   const [noteToDelete, setNoteToDelete] = useState(null);
 
   const onDelete = e => {
-    console.log('set show true', e);
     setShow(true);
     setNoteToDelete(e);
   };
 
   const onDeleteConfirmed = e => {
-    console.log('on Delete confirmed', e);
     setShow(false);
     onDeleteNote(noteToDelete);
   };
 
   const handleClose = () => {
-    console.log('handle close');
     setShow(false);
   };
-  const handleShow = () => setShow(true);
 
   return (
     <div className="app-sidebar">
